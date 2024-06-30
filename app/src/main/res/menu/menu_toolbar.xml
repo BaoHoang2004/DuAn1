@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/icSearch"
+        android:icon="@drawable/ic_search"
+        android:title="search"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/icinfo"
+        android:icon="@drawable/ic_person"
+        android:title="Add"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/thongke"
+        android:icon="@drawable/ic_equalizer"
+        android:title="Thống kê"
+        />
+    <item
+        android:id="@+id/hoadon"
+        android:icon="@drawable/ic_hoadon"
+        android:title="Giỏ hàng"
+        />
+
+    <item
+        android:id="@+id/loaidouong"
+        android:icon="@drawable/ic_logout"
+        android:title="Loại đồ uống"
+        />
+    <item
+        android:id="@+id/themthungan"
+        android:icon="@drawable/ic_logout"
+        android:title="Thêm thu ngân"
+        />
+    <item
+        android:id="@+id/qlsp"
+        android:icon="@drawable/ic_logout"
+        android:title="QLSP"
+        />
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_logout"
+        android:title="Đăng xuất"
+        />
+    <item
+        android:id="@+id/doimatkhau"
+        android:icon="@drawable/ic_logout"
+        android:title="Đổi mật khẩu"
+        />
+
+</menu>

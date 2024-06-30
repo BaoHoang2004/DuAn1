@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="5dp">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/carview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardCornerRadius="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="10dp">
+            <ImageView
+                android:id="@+id/imgViewDU"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/img"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:id="@+id/tvMaDoUong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:hint="Ma du"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="#FF5722"/>
+            <TextView
+                android:id="@+id/tvTenDoUong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:hint="Ma du"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="#FF5722"
+                />
+            <TextView
+                android:id="@+id/tvGiaDouong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:hint="Giá SP"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

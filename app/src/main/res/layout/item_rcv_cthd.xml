@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFF5D7">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tvTenDoUong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:hint="Giá SP"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:layout_below="@id/tvNgayMua"/>
+            <TextView
+                android:id="@+id/tvSoLuong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:hint="Giá SP"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:layout_below="@id/tvNgayMua"
+                android:layout_toEndOf="@id/tvTenDoUong"/>
+            <TextView
+                android:id="@+id/tvTenSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:hint="Giá SP"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:layout_below="@id/tvTenDoUong"/>
+            <TextView
+                android:id="@+id/tvDongia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:hint="Giá SP"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:layout_below="@id/tvTenDoUong"
+                android:layout_toEndOf="@+id/tvTenSize"/>
+            <TextView
+                android:id="@+id/tvGhiChu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:hint="Giá SP"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:layout_below="@id/tvDongia" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

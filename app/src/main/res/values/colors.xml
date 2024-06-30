@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorAvailable">#FFF5D7</color> <!-- Màu cho trạng thái vẫn còn -->
+    <color name="colorOutOfStock">#C8C5C5</color> <!-- Màu cho trạng thái hết hàng -->
+</resources>

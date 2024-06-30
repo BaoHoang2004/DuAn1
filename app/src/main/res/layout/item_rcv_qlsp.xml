@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="5dp">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewQLSP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <ImageView
+                android:id="@+id/imgViewDU"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/img"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:id="@+id/tvMaDoUong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:hint="Ma du"
+                android:layout_toEndOf="@+id/imgViewDU"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="#FF5722"/>
+            <TextView
+                android:id="@+id/tvTenDoUong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:hint="Ma du"
+                android:layout_toEndOf="@+id/imgViewDU"
+                android:layout_below="@+id/tvMaDoUong"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="#FF5722"
+                />
+            <TextView
+                android:id="@+id/tvGiaDouong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:hint="Giá SP"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:layout_toEndOf="@id/imgViewDU"
+                android:layout_below="@id/tvTenDoUong"/>
+            <TextView
+                android:id="@+id/tvTrangThai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:hint="Giá SP"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:layout_toEndOf="@id/imgViewDU"
+                android:layout_below="@id/tvGiaDouong"/>
+            <Button
+                android:id="@+id/btnCapNhatTrangthai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cập nhật trạng thái"
+                android:layout_below="@+id/tvTrangThai"/>
+            <ImageView
+                android:id="@+id/icDeleteDU"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_delete"
+                android:layout_alignParentEnd="true"/>
+            <ImageView
+                android:id="@+id/icEditDU"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/_edit"
+                android:layout_toLeftOf="@id/icDeleteDU"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

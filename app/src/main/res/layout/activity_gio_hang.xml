@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.GioHangActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarGioHang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@color/white"
+        android:background="#FF045F"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvGioHang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"/>
+        <TextView
+            android:id="@+id/tvTongTien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#F44336"
+            android:textSize="20dp"
+            android:layout_above="@id/radiogroup"/>
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnThanhToan"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/radio_tienmat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Tiền mặt"
+                android:checked="true"/>
+            <RadioButton
+                android:id="@+id/radio_qrcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Ngân hàng(QR code)" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnThanhToan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Thanh toán"
+            android:textSize="20dp"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="#FFC100"
+            android:textColor="@color/black"
+            android:textAllCaps="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

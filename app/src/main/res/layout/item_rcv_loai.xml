@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="10dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F4D2D2"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tvMaLoai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="aa"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:id="@+id/tvTenLoai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_below="@+id/tvMaLoai"
+            android:text="aa"/>
+        <ImageView
+            android:id="@+id/icDeleteL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_delete"
+            android:layout_alignParentEnd="true"/>
+        <ImageView
+            android:id="@+id/icEditL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/_edit"
+            android:layout_toLeftOf="@+id/icDeleteL"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
